@@ -6,8 +6,8 @@ export function CharacterCard() {
   return (
     <div className="pixel-card p-6">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="pixel-font text-sm text-purple-400">CHARACTER</h2>
-        <Button variant="outline" size="sm" className="pixel-font text-xs border-slate-600">
+        <h2 className="font-heading text-lg text-purple-400">CHARACTER</h2>
+        <Button variant="outline" size="sm" className="font-pixel text-xs border-slate-600 hover:border-purple-500/50">
           CUSTOMIZE
         </Button>
       </div>
@@ -17,8 +17,8 @@ export function CharacterCard() {
         <div className="w-24 h-24 bg-gradient-to-br from-purple-500 to-purple-700 pixel-border mb-3 flex items-center justify-center glow-effect">
           <User className="w-12 h-12 text-white" />
         </div>
-        <h3 className="pixel-font text-sm text-white mb-1">PIXEL WARRIOR</h3>
-        <p className="pixel-font text-xs text-purple-400">LEVEL 5 PRODUCTIVITY MASTER</p>
+        <h3 className="font-heading text-lg text-white mb-1">PIXEL WARRIOR</h3>
+        <p className="font-pixel text-xs text-purple-400">LEVEL 5 • TECHNICAL SPECIALIST</p>
       </div>
 
       {/* Character Stats */}

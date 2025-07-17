@@ -83,7 +83,18 @@ module.exports = {
   		},
   		fontFamily: {
   			sans: [
-  				'Inter var',
+  				'Inter',
+  				'system-ui',
+  				'sans-serif'
+  			],
+  			pixel: [
+  				'JetBrains Mono',
+  				'Fira Code',
+  				'monospace'
+  			],
+  			heading: [
+  				'Space Grotesk',
+  				'Inter',
   				'sans-serif'
   			]
   		},
@@ -91,7 +102,10 @@ module.exports = {
   			'fade-in': 'fade-in 0.5s ease-out',
   			'slide-up': 'slide-up 0.5s ease-out',
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+  			'float': 'float 3s ease-in-out infinite',
+  			'shimmer': 'shimmer 2s linear infinite'
   		},
   		keyframes: {
   			'fade-in': {
@@ -126,6 +140,30 @@ module.exports = {
   				},
   				to: {
   					height: '0'
+  				}
+  			},
+  			'pulse-glow': {
+  				'0%, 100%': {
+  					boxShadow: '0 0 5px rgba(139, 92, 246, 0.5)'
+  				},
+  				'50%': {
+  					boxShadow: '0 0 20px rgba(139, 92, 246, 0.8), 0 0 30px rgba(139, 92, 246, 0.6)'
+  				}
+  			},
+  			'float': {
+  				'0%, 100%': {
+  					transform: 'translateY(0px)'
+  				},
+  				'50%': {
+  					transform: 'translateY(-6px)'
+  				}
+  			},
+  			'shimmer': {
+  				'0%': {
+  					backgroundPosition: '-200% 0'
+  				},
+  				'100%': {
+  					backgroundPosition: '200% 0'
   				}
   			}
   		},
